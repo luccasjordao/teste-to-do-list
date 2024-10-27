@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+html,
+body {
+  background-color: #1e293b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input, button {
+  outline: none;
+  border: none;
+}
+
+/* Centralizar e espaçar os elementos */
+.container {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  background-color: #334155;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Personalização do scroll */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Botões mais atraentes */
+button {
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #64748b;
+}
