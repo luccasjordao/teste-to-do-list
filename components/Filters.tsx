@@ -1,3 +1,4 @@
+import React from "react";
 type Props = {
     currentFilter: "todos" | "futuro" | "passado";
     setFilter: (filter: "todos" | "futuro" | "passado") => void;
